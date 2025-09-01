@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="assets/logo/logo_Market.svg" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="../assets/logo/logo_Market.svg" sizes="32x32">
 <meta name="description" content="Un buenaq tienda para ver el auto perfecto">
 <meta name="keywords" content="autos,venta de autos,coches,tienda de autos,autos nuevos,autos usados,autos 0km">
 <meta name="author" content="AutoMarket PRO">
@@ -12,6 +12,7 @@
 <title>AutoMarket PRO</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/main.css">
 <script src="../js/app.js" defer></script>
 </head>
@@ -22,7 +23,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container text-center">
       <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
-        <img src="../assets/logo/logo_Market.svg" sizes="48x48" alt="logo"> <span class="fw-bold text-light">AutoMarket PRO</span>
+        <img src="../assets/logo/logo_Market.svg" sizes="48x48" alt="logo"> <span class="text-logo fw-bold">AutoMarket PRO</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
         <span class="navbar-toggler-icon"></span>
@@ -159,7 +160,7 @@
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Renault_Duster-1.webp" alt="Renault Duster" loading="lazy">
-          <span class="price">$ 26,000</span>
+          <span class="price">$26,000</span>
         </div>
         <div class="body">
           <div class="title">Renault Duster</div>
@@ -193,7 +194,7 @@
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Volkswagen_Golf_GTI-1.webp" alt="Volkswagen Golf GTI" loading="lazy">
-          <span class="price">$ 29,000</span>
+          <span class="price">$29,000</span>
         </div>
         <div class="body">
           <div class="title">Volkswagen Golf GTI</div>
@@ -210,24 +211,29 @@
 </main>
 
 <footer class="footer mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
     <div class="d-flex align-items-center gap-2">
       <img src="../assets/logo/logo_Market.svg" height="50" width="50" alt="logo">
       <span class="text-light-50">© 2025 AutoMarket PRO</span>
     </div>
-    <div class="d-flex flex-column">
+    <div class="d-flex flex-column" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
       <p>📲 Síguenos en nuestras redes sociales</p>
       <div class="links d-flex gap-3 justify-content-center">
-        <a href="https://www.facebook.com">Facebok</a>
+        <a href="https://www.facebook.com">Facebook</a>
         <a href="https://www.instagram.com">Instagram</a>
         <a href="https://www.X.com">X(Twitter)</a>
       </div>
     </div>
   </div>
 </footer>
+
 <button id="toTopBtn" class="btn btn-brand position-fixed" style="right:1rem;bottom:1rem">
   <i class="bi bi-arrow-up"></i>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>

@@ -47,8 +47,8 @@
 html, body {
   background: url(https://wallpapers.com/images/hd/pitch-black-leather-like-material-2w1vwucx1o9xzfvu.jpg);
   color: #e6e8ee;
-  padding: 0;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -68,6 +68,15 @@ a:hover {
   width: 48px;
   height: 48px;
 }
+.navbar .text-logo {
+  color: #e6e8ee;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.655);
+  transition: color 0.35s ease;
+}
+.navbar .text-logo:hover {
+  color: #0dcaf0;
+  text-decoration: none;
+}
 .navbar .nav-link {
   color: #e6e8ee;
   margin-left: 0.75rem;
@@ -79,6 +88,10 @@ a:hover {
   color: #0f1115;
   background: #e6e8ee;
   transform: translateY(-2px) scale(1.05);
+}
+.navbar .nav-link:active {
+  transform: translateY(0) scale(0.98);
+  background: rgb(126, 126, 126);
 }
 
 .btn-brand {
@@ -169,6 +182,7 @@ a:hover {
 
 .card-vehicle {
   overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 .card-vehicle .thumb {
   position: relative;
@@ -205,6 +219,10 @@ a:hover {
 .card-vehicle .body .actions {
   display: flex;
   gap: 0.5rem;
+}
+.card-vehicle:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.715);
+  transform: translateY(-2px) scale(1.035);
 }
 
 .row.g-4 {
@@ -282,13 +300,13 @@ header {
   }
 }
 
-main, footer {
+main {
   --fu-distance: 10px;
   animation: float-up-var 0.95s cubic-bezier(0.16, 0.84, 0.44, 1) 0s both;
   will-change: transform, opacity;
 }
 @media (prefers-reduced-motion: reduce) {
-  main, footer {
+  main {
     animation: none;
     transform: none;
     opacity: 1;
