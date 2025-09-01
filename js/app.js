@@ -53,13 +53,12 @@ function toast(msg) {
   setTimeout(() => t.remove(), 2400);
 }
 
-// Esperamos a que el DOM esté cargado
+// Esperamos a que el DOM esté cargado y asi encontrar y eliminar elementos
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("Form_Profile");
   const btnReset = document.getElementById("btnReset");
 
   btnReset.addEventListener("click", () => {
-    // Opción 1: resetear a valores iniciales
     form.reset();
   });
 });
@@ -83,16 +82,18 @@ input.addEventListener('change', function(){
   });
 
 //para validación de datos en los formularios
-(() => {
-  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
+document.addEventListener('DOMContentLoaded', () => {
+  const forms = document.querySelectorAll('.needs-validation');
+
+  console.log('Formularios detectados:', forms.length); // Útil para debugging
+
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
       if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
+        event.preventDefault();
+        event.stopPropagation();
       }
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()  
+      form.classList.add('was-validated');
+    });
+  });
+});
