@@ -19,6 +19,7 @@
 
 <body>
 
+<!--header con barra de navegación-->
 <header class="sticky-top">
   <nav class="navbar navbar-expand-lg">
     <div class="container text-center">
@@ -43,9 +44,10 @@
 </header>
 
 <main class="container pb-5">
+  <!--Titulo de la pagina-->
   <section class="page-header text-center">
     <div class="container">
-      <h2>Tienda</h2>
+      <h1>Tienda</h1>
       <p>Explorá todo nuestro inventario. Usá el buscador para filtrar por marca, modelo o año.</p>
       <div class="col-md-6 mx-auto">
         <input id="searchVehicles" class="form-control form-control-lg" placeholder="Buscar vehículos...">
@@ -55,6 +57,7 @@
 
   <section class="row g-4">
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Chevloret_Camaroz28_1.webp" alt="Chevrolet Camaro Z/28" loading="lazy">
@@ -72,6 +75,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Ford_F-150_Raptor-1.webp" alt="Ford F-150 Raptor" loading="lazy">
@@ -89,6 +93,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Ford_Explorer-1.webp" alt="Ford Explorer" loading="lazy">
@@ -106,6 +111,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/RAM_1500_TRX_Havoc_Edition-1.webp" alt="RAM TRX 1500" loading="lazy">
@@ -123,6 +129,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Ford_Focus_ST-1.webp" alt="Ford Focus ST" loading="lazy">
@@ -140,6 +147,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Ford_Fiesta-1.webp" alt="Ford Fiesta" loading="lazy">
@@ -157,6 +165,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Renault_Duster-1.webp" alt="Renault Duster" loading="lazy">
@@ -174,6 +183,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Fiat_Cronos-1.webp" alt="Fiat Cronos">
@@ -191,6 +201,7 @@
       </article>
     </div>
     <div class="col-sm-6 col-lg-4">
+      <!--Card de cada vehiculo de la tienda-->
       <article class="card-vehicle">
         <div class="thumb">
           <img src="../assets/images/Volkswagen_Golf_GTI-1.webp" alt="Volkswagen Golf GTI" loading="lazy">
@@ -210,12 +221,15 @@
   </section>
 </main>
 
+<!--footer de la pagina-->
 <footer class="footer mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+  <section class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+    <!--logo y la marca del sitio web-->
     <div class="d-flex align-items-center gap-2">
       <img src="../assets/logo/logo_Market.svg" height="50" width="50" alt="logo">
       <span class="text-light-50">© 2025 AutoMarket PRO</span>
     </div>
+    <!--enlaces de redes sociales-->
     <div class="d-flex flex-column" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
       <p>📲 Síguenos en nuestras redes sociales</p>
       <div class="links d-flex gap-3 justify-content-center">
@@ -224,14 +238,16 @@
         <a href="https://www.X.com">X(Twitter)</a>
       </div>
     </div>
-  </div>
+  </section>
 </footer>
 
+<!--boton de volver arriba de la pagina-->
 <button id="toTopBtn" class="btn btn-brand position-fixed" style="right:1rem;bottom:1rem">
   <i class="bi bi-arrow-up"></i>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!--script para el AOS animation-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 

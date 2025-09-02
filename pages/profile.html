@@ -18,6 +18,7 @@
 </head>
 <body>
 
+<!--header con la barra de navegación-->  
 <header class="sticky-top">
   <nav class="navbar navbar-expand-lg">
     <div class="container text-center">
@@ -42,14 +43,17 @@
 </header>
 
 <main class="container pb-5">
+  <!--Titulo de la pagina-->
   <section class="page-header text-center my-4">
     <div class="container">
-      <h2>Mi Perfil</h2>
+      <h1>Mi Perfil</h1>
       <p>Gestioná tus datos personales y preferencias.</p>
     </div>
-  </section>  
-  <div class="row g-4">
+  </section>
+  <section class="row g-4">
+    <!--Parte del perfil-->
     <div class="col-lg-4">
+      <!--Imagen de perfil-->
       <div class="card-glass2 p-4 text-center">
         <div id="fotoSubida-container">
           <p class="text-muted">Aquí se mostrará tu imagen</p>
@@ -63,6 +67,7 @@
       </div>
     </div>
     <div class="col-lg-8">
+      <!--Formulario del perfil-->
       <form class="card-glass p-4 needs-validation" id="Form_Profile" novalidate>
         <div class="row g-3">
           <div class="col-md-6">
@@ -106,15 +111,18 @@
         </div>
       </form>
     </div>
-  </div>
+  </section>
 </main>
 
+<!--footer de la pagina-->
 <footer class="footer mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+  <section class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+    <!--logo y la marca del sitio web-->
     <div class="d-flex align-items-center gap-2">
       <img src="../assets/logo/logo_Market.svg" height="50" width="50" alt="logo">
       <span class="text-light-50">© 2025 AutoMarket PRO</span>
     </div>
+    <!--enlaces de redes sociales-->
     <div class="d-flex flex-column" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
       <p>📲 Síguenos en nuestras redes sociales</p>
       <div class="links d-flex gap-3 justify-content-center">
@@ -123,14 +131,16 @@
         <a href="https://www.X.com">X(Twitter)</a>
       </div>
     </div>
-  </div>
+  </section>
 </footer>
 
+<!--boton de volver arriba de la pagina-->
 <button id="toTopBtn" class="btn btn-brand position-fixed" style="right:1rem;bottom:1rem">
   <i class="bi bi-arrow-up"></i>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!--script para el AOS animation-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 

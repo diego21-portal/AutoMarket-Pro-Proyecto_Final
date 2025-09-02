@@ -17,6 +17,7 @@
 </head>
 <body>
 
+<!--header con la barra de navegación-->
 <header class="sticky-top">
   <nav class="navbar navbar-expand-lg">
     <div class="container text-center">
@@ -42,13 +43,15 @@
 
 <main class="container pb-5">
   <section class="page-header">
+    <!--Titulo de la pagina-->
     <div class="container text-center">
-      <h2>Ingresar</h2>
+      <h1>Ingresar</h1>
       <p>Accedé para ver tus favoritos, historial y más.</p>
     </div>
   </section>  
   <div class="row justify-content-center">
     <div class="col-md-6">
+      <!--Formulario de inicio de sesión-->
       <form class="card-glass p-4 needs-validation" novalidate>
         <div class="mb-3">
           <label class="form-label">Email</label>
@@ -75,12 +78,15 @@
   </div>
 </main>
 
+<!--footer de la pagina-->
 <footer class="footer mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+  <section class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+    <!--logo y la marca del sitio web-->
     <div class="d-flex align-items-center gap-2">
       <img src="../assets/logo/logo_Market.svg" height="50" width="50" alt="logo">
       <span class="text-light-50">© 2025 AutoMarket PRO</span>
     </div>
+    <!--enlaces de redes sociales-->
     <div class="d-flex flex-column" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
       <p>📲 Síguenos en nuestras redes sociales</p>
       <div class="links d-flex gap-3 justify-content-center">
@@ -89,17 +95,20 @@
         <a href="https://www.X.com">X(Twitter)</a>
       </div>
     </div>
-  </div>
+  </section>
 </footer>
 
+<!--boton de volver arriba de la pagina-->
 <button id="toTopBtn" class="btn btn-brand position-fixed" style="right:1rem;bottom:1rem">
   <i class="bi bi-arrow-up"></i>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!--script para el AOS animation-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 
+<!-- Validación de formularios de Bootstrap -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('.needs-validation');

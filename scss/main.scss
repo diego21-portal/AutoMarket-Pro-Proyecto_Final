@@ -273,8 +273,6 @@ a:hover { color: $brand-primary-2; }
 }
 
 // Páginas
-
-
 header{@include slide-down(120%, 0.95s, cubic-bezier(.22, .61, .36, 1), 0s, both);}
 main{@include float-up(10px, 0.95s, cubic-bezier(.16, .84, .44, 1), 0s, both);}
 

@@ -19,7 +19,9 @@
 
 <body>
 
+<!--header con la barra de navegación-->
 <header class="sticky-top">
+
   <nav class="navbar navbar-expand-lg">
     <div class="container text-center">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -39,10 +41,12 @@
         </ul>
       </div>
     </div>
-  </nav>  
+  </nav>
+
 </header>
 
 <main class="container py-5">
+  <!--hero de la pagina-->
   <section class="hero">
     <div class="container hero-inner">
       <span class="badge badge-dot">Stock actualizado • Entrega inmediata</span>
@@ -54,9 +58,12 @@
       </div>
     </div>
   </section>
+
   <section class="mb-5">
+    <!--modelos destacados de la home-->
     <h2 class="section-title">Modelos destacados <small>curados por nuestros expertos</small></h2>
     <div class="row g-4 mt-1">
+      <!--Card de cada vehiculo de la tienda-->
       <div class="col-sm-6 col-lg-4">
         <article class="card-vehicle">
           <div class="thumb">
@@ -75,7 +82,8 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4">
-        <article class="card-vehicle">
+        <!--Card de cada vehiculo de la tienda--> 
+        <article class="card-vehicle">        
           <div class="thumb">
             <img src="assets/images/Ford_F-150_Raptor-1.webp" alt="Ford F-150 Raptor" loading="lazy">
             <span class="price">$24.999</span>
@@ -93,6 +101,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
         <article class="card-vehicle">
+          <!--Card de cada vehiculo de la tienda-->
           <div class="thumb">
             <img src="assets/images/Ford_Explorer-1.webp" alt="Ford Explorer" loading="lazy">
             <span class="price">$61.999</span>
@@ -109,6 +118,7 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4">
+        <!--Card de cada vehiculo de la tienda-->
         <article class="card-vehicle">
           <div class="thumb">
             <img src="assets/images/RAM_1500_TRX_Havoc_Edition-1.webp" alt="RAM TRX 1500" loading="lazy">
@@ -126,6 +136,7 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4">
+        <!--Card de cada vehiculo de la tienda-->
         <article class="card-vehicle">
           <div class="thumb">
             <img src="assets/images/Ford_Focus_ST-1.webp" alt="Ford Focus ST" loading="lazy">
@@ -143,6 +154,7 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4">
+        <!--Card de cada vehiculo de la tienda-->
         <article class="card-vehicle">
           <div class="thumb">
             <img src="assets/images/Ford_Fiesta-1.webp" alt="Ford Fiesta" loading="lazy">
@@ -162,6 +174,7 @@
     </div>
   </section>
 
+  <!--sección de beneficios-->
   <section class="row g-4 align-items-center">
     <div class="col-lg-6">
       <div class="card-glass p-4">
@@ -190,12 +203,15 @@
   </section>
 </main>
 
+<!--footer de la pagina-->
 <footer class="footer mt-5 py-4">
-  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
+  <section class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom">
     <div class="d-flex align-items-center gap-2">
+      <!--logo y la marca del sitio web-->
       <img src="assets/logo/logo_Market.svg" height="50" width="50" alt="logo">
       <span class="text-light-50">© 2025 AutoMarket PRO</span>
     </div>
+    <!--enlaces de redes sociales-->
     <div class="d-flex flex-column" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
       <p>📲 Síguenos en nuestras redes sociales</p>
       <div class="links d-flex gap-3 justify-content-center">
@@ -204,14 +220,16 @@
         <a href="https://www.X.com">X(Twitter)</a>
       </div>
     </div>
-  </div>
+  </section>
 </footer>
 
+<!--boton de volver arriba de la pagina-->
 <button id="toTopBtn" class="btn btn-brand position-fixed" style="right:1rem;bottom:1rem">
   <i class="bi bi-arrow-up"></i>
 </button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!--script para el AOS animation-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 
